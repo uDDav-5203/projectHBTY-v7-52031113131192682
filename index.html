@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>С Днём Рождения!</title>
+    <link rel="stylesheet" href="style.css?v=10">
+</head>
+<body>
+
+    <!-- ГЛАВНЫЙ ХОЛСТ САЙТА (СТРОГО 2х3, СРАЗУ В СИРЕНИ) -->
+    <main class="app-card celebrate-bg" id="app-card">
+
+        <!-- ОСНОВНОЙ БЛОК (КОНВЕРТ И 3D-ОТКРЫТКА) -->
+        <div class="wrapper" id="main-wrapper">
+            
+            <!-- Изображение закрытого конверта -->
+            <div class="envelope-container envelope-animated" id="envelope" onclick="openEnvelope()">
+                <img src="envelope_close.png" id="envelope-img" alt="Конверт">
+            </div>
+
+            <!-- ИНТЕРАКТИВНОЕ ПОЛОТНО 2х3 -->
+            <div class="flip-card-container" id="flip-container">
+                <!-- ВНУТРЕННИЙ СЛОЙ ДЛЯ КРУЧЕНИЯ И ЭЛАСТИЧНОСТИ -->
+                <div class="flip-card-flex-layer" id="card-flex-layer">
+                    
+                    <!-- ЛИСТ 1 (ЛИЦЕВАЯ СТОРОНА) -->
+                    <div class="flip-card-front">
+                        <img src="page1.png" alt="Часть 1">
+                    </div>
+
+                    <!-- ЛИСТ 2 (ОБРАТНАЯ СТОРОНА) -->
+                    <div class="flip-card-back">
+                        <img src="page2.png" alt="Часть 2">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ЕДИНАЯ КНОПКА ПЕРЕВОРОТА (ИЗНАЧАЛЬНО СКРЫТА) -->
+            <button class="flip-btn hidden" id="global-flip-btn" onclick="toggleFlip(event)">🔄</button>
+
+        </div>
+
+    </main>
+
+    <script src="script.js?v=10"></script>
+</body>
+</html>
