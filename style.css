@@ -9,7 +9,7 @@ body, html {
     height: 100%;
     overflow: hidden;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #01110c; /* Черное пространство вокруг открытки */
+    background: #01110d; /* Черное пространство вокруг открытки */
     display: flex;
     justify-content: center;
     align-items: center;
