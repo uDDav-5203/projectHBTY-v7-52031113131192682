@@ -67,7 +67,7 @@ body, html {
 .flip-card-container {
     position: absolute;
     top: 52%; left: 50%;
-    width: 77%; height: 77%;
+    width: 77%; height: 76%;
     transform: translate(-50%, -50%) scale(0); 
     opacity: 0;
     perspective: 1500px; 
